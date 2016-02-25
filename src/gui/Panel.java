@@ -1,9 +1,8 @@
 package gui;
 
 /* Hamza Raza
- * ICU3U1
- * June 11, 2013
- * Panel class
+ * 
+ * 
  */
 import java.awt.Color;
 import java.awt.Font;
@@ -307,7 +306,7 @@ public class Panel extends JPanel implements ActionListener, KeyListener,
 		} else if (menu.equalsIgnoreCase("end") || menu.equalsIgnoreCase("won")) {
 			//stops the music
 			playMain(false);
-			//re initialises the streams
+			//re initializes the streams
 			try {
 				mainIS = new FileInputStream(new File("Music//Main.wav"));
 				mainAS = new AudioStream(mainIS);
@@ -336,7 +335,7 @@ public class Panel extends JPanel implements ActionListener, KeyListener,
 	public void playClick() {
 		//starts the audio
 		AudioPlayer.player.start(clickAS);
-		//re initialises the streams
+		//re initializes the streams
 		try {
 			clickIS = new FileInputStream(new File("Music//Pop.wav"));
 			clickAS = new AudioStream(clickIS);
@@ -374,7 +373,6 @@ public class Panel extends JPanel implements ActionListener, KeyListener,
 	//Purpose: to format the time
 	//Pre: 1 long parameter
 	//Post: returns String parameter
-	//borrowed parts from internet - referenced in works cited
 	public static String format(final long time) {
 		final StringBuilder t = new StringBuilder();
 		//calculates the seconds and minutes
@@ -399,7 +397,6 @@ public class Panel extends JPanel implements ActionListener, KeyListener,
 	//Purpose: to outline a text
 	//Pre: 1 Graphics parameter, 1 String parameter, 2 float parameter, 1 Color parameter
 	//Post: N/A
-	//Borrowed parts of code - Referenced in works cited
 	public static void outlineText(Graphics g, String s, float x, float y,
 			Color c) {
 		Graphics2D g2 = (Graphics2D) g;
@@ -456,7 +453,6 @@ public class Panel extends JPanel implements ActionListener, KeyListener,
 	//Purpose: to center text on screen
 	//Pre: 1 String parameter, 2 int parameters, 1 Graphics parameter
 	//Post: N/A
-	//Borrowed parts of this code from the internet, referenced in Works Cited
 	public void centerText(String s, int w, int h, Graphics g) {
 		FontMetrics fm = g.getFontMetrics();
 		int x = (w - fm.stringWidth(s)) / 2;

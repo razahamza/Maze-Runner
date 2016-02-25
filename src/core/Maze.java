@@ -1,9 +1,8 @@
 package core;
 
 /* Hamza Raza
- * ICU3U1
- * June 11, 2013
- * Main class
+ * 
+ * 
  */
 import gui.Panel;
 
@@ -26,7 +25,7 @@ public class Maze extends JFrame {
 		setVisible(true);
 	}
 
-	//calls this class to run the constructor allowing it to initialise the frame.
+	//calls this class to run the constructor allowing it to initialize the frame.
 	public static void main(String[] args) {
 		SwingUtilities.invokeLater(new Runnable() {
 			public void run() {

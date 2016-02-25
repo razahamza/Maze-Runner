@@ -1,9 +1,8 @@
 package objects;
 
 /* Hamza Raza
- * ICU3U1
- * June 11, 2013
- * Level object
+ * 
+ * 
  */
 import java.awt.Point;
 import java.awt.Rectangle;
@@ -18,7 +17,7 @@ public class Level {
 	private char[][] map;
 	private List<Rectangle> boundary;
 
-	//constructor to initialise variables when creating the object
+	//constructor to initialize variables when creating the object
 	public Level(Point start, Point end, boolean current) {
 		this.start = start;
 		this.end = end;
